@@ -129,6 +129,9 @@ struct TSF_MeshData
     #ifdef TSF_PIXEL_IN_COLOR
         half4 color;
     #endif
+    #ifdef TSF_PIXEL_IN_FACING
+        bool isFrontFace;
+    #endif
 };
 
 TSF_MeshData TSF_InitializeMeshData()

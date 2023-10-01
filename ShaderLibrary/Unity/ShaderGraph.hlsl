@@ -396,6 +396,9 @@ SurfaceDescriptionInputs BuildSurfaceDescriptionInputs(Varyings input)
     #ifdef VARYINGS_NEED_COLOR
         md.color = input.color;
     #endif
+    #if defined(SHADER_STAGE_FRAGMENT) && defined(VARYINGS_NEED_CULLFACE)
+        md.isFrontFace = IS_FRONT_VFACE(input.cullFace, true, false);
+    #endif
 
     SurfaceDescriptionInputs output = (SurfaceDescriptionInputs)0;
     output.md = md;
