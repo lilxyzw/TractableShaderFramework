@@ -1,0 +1,10 @@
+{
+  "name": "jp.lilxyzw.tsf",
+  "version": "0.1.0",
+  "displayName": "TractableShaderFramework",
+  "description": "A framework for creating shaders that are available in multiple render pipelines.",
+  "unity": "2020.3",
+  "licensesUrl": "https://github.com/lilxyzw/TractableShaderFramework/blob/main/LICENSE",
+  "license": "MIT",
+  "keywords": ["Shader"]
+}
